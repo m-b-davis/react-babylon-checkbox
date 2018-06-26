@@ -1,4 +1,5 @@
 import React from 'react';
+import './checkbox.css';
 
 // Stateless component purely concerned with display
 const Checkbox = props => (

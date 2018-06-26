@@ -1,0 +1,32 @@
+.react-checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 22px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.react-checkbox label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.react-checkbox label::before{
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: -3px;
+  top: 2px;
+  border: 1px solid;
+  border-radius: 5px;
+  content: "";
+  display: inline-block;
+}
+
+.react-checkbox--checked label::after {
+  content: "X";
+  font-size: 14px;
+  left: 1px;
+  top: 3px;
+}
